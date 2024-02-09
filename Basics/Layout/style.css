@@ -1,0 +1,8 @@
+.col{
+    height: 50px;
+    border: 1px solid red;
+}
+
+.col:nth-child(odd){
+    background-color: blue;
+}
