@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Grid no Bootstrap</h1>
+    <p>O sistema de grid do Bootstrap utiliza uma estrutura baseada em linhas e colunas para criar layouts flexíveis e
+        responsivos.</p>
+
+    <h2>1. Estrutura Básica</h2>
+    <p>Para utilizar o grid, é necessário definir uma <code>row</code> (linha) como elemento pai e dentro dela adicionar
+        os elementos filhos com a classe <code>col</code> (coluna).</p>
+    <div class="container-fluid border bg-black row">
+        <div class="bg-primary m-2 col">Coluna 1</div>
+        <div class="bg-primary m-2 col">Coluna 2</div>
+        <div class="bg-primary m-2 col">Coluna 3</div>
+    </div>
+
+    <h2>2. Definição de Tamanhos</h2>
+    <p>O grid do Bootstrap é baseado em um sistema de 12 colunas. Podemos definir o tamanho de cada coluna utilizando
+        <code>col-{n}</code>, onde <code>n</code> é um número de 1 a 12.</p>
+    <div class="container-fluid border bg-black row">
+        <div class="bg-success m-2 col-4">Coluna 4</div>
+        <div class="bg-success m-2 col-8">Coluna 8</div>
+    </div>
+
+    <h2>3. Responsividade</h2>
+    <p>Podemos definir diferentes larguras de colunas para diferentes tamanhos de tela usando breakpoints:</p>
+    <ul>
+        <li><code>col-sm-{n}</code> - Extra pequeno (&ge;576px)</li>
+        <li><code>col-md-{n}</code> - Pequeno (&ge;768px)</li>
+        <li><code>col-lg-{n}</code> - Médio (&ge;992px)</li>
+        <li><code>col-xl-{n}</code> - Grande (&ge;1200px)</li>
+        <li><code>col-xxl-{n}</code> - Extra grande (&ge;1400px)</li>
+    </ul>
+    <div class="container-fluid border bg-black row">
+        <div class="bg-warning m-2 col-sm-6 col-md-4">Pequeno</div>
+        <div class="bg-warning m-2 col-sm-6 col-md-8">Médio</div>
+    </div>
+
+    <h2>4. Alinhamento</h2>
+    <p>Podemos alinhar os elementos dentro de uma linha usando classes utilitárias:</p>
+    <ul>
+        <li><code>justify-content-start</code> - Alinha à esquerda</li>
+        <li><code>justify-content-center</code> - Centraliza</li>
+        <li><code>justify-content-end</code> - Alinha à direita</li>
+        <li><code>align-items-start</code> - Alinha no topo</li>
+        <li><code>align-items-center</code> - Alinha no centro verticalmente</li>
+        <li><code>align-items-end</code> - Alinha na base</li>
+    </ul>
+    <div class="container-fluid border bg-black row justify-content-center">
+        <div class="bg-danger m-2 col-3">Item Centralizado</div>
+    </div>
+
+    <h2>Conclusão</h2>
+    <p>O sistema de grid do Bootstrap facilita a criação de layouts responsivos e flexíveis, permitindo organizar
+        elementos de forma eficiente em diferentes tamanhos de tela.</p>
+</body>
+
+</html>

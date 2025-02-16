@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Containers no Bootstrap</h1>
+    <p>Os containers são elementos fundamentais no Bootstrap para estruturar e organizar o layout de forma responsiva.
+    </p>
+
+    <h2>1. Container Fixo</h2>
+    <p>O <code>.container</code> possui uma largura fixa que se adapta ao tamanho da tela. Ele não ocupa 100% da largura
+        e possui margens laterais automáticas.</p>
+    <div class="container border bg-body-tertiary">
+        <h3>Container</h3>
+        <p>Este é um container de tamanho fixo.</p>
+    </div>
+
+    <h2>2. Container Fluid</h2>
+    <p>O <code>.container-fluid</code> ocupa 100% da largura do elemento pai, independentemente do tamanho da tela.</p>
+    <div class="container-fluid border bg-secondary text-white">
+        <h3>Container Fluid</h3>
+        <p>Este container ocupa toda a largura disponível.</p>
+    </div>
+
+    <h2>3. Container Responsivo</h2>
+    <p>O <code>.container-{breakpoint}</code> muda de comportamento conforme o tamanho da tela, tornando-se fluido em
+        telas menores.</p>
+    <div class="container-md border bg-primary text-white">
+        <h3>Container Responsivo</h3>
+        <p>Este container adapta seu tamanho conforme o breakpoint definido.</p>
+    </div>
+
+    <h2>Personalização</h2>
+    <ul>
+        <li><strong>Bordas:</strong> Adicione <code>border</code> para exibir uma borda ao redor do container.</li>
+        <li><strong>Cores de Fundo:</strong> Utilize <code>bg-cor</code> (exemplo: <code>bg-secondary</code>) para
+            alterar o fundo.</li>
+        <li><strong>Espaçamento Interno:</strong> Use <code>p-</code> para padding (exemplo: <code>p-3</code>) e
+            <code>m-</code> para margin (exemplo: <code>m-3</code>).</li>
+        <li><strong>Cor do Texto:</strong> Utilize <code>text-cor</code> (exemplo: <code>text-white</code>) para alterar
+            a cor do texto.</li>
+    </ul>
+
+    <h2>Conclusão</h2>
+    <p>Os containers do Bootstrap ajudam a estruturar o layout de forma responsiva e organizada. Saber quando usar cada
+        tipo de container melhora a experiência do usuário.</p>
+</body>
+
+</html>
