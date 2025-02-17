@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mb-4">Tabelas no Bootstrap</h1>
+
+        <h2>1. Tabela Básica</h2>
+        <p>O Bootstrap fornece a classe <code>table</code> para estilizar tabelas de forma automática.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ford</td>
+                    <td>Mustang</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Toyota</td>
+                    <td>Corolla</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Chevrolet</td>
+                    <td>Camaro</td>
+                    <td>2023</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. Tabela com Estilos</h2>
+        <p>Podemos adicionar diferentes estilos à tabela usando classes do Bootstrap:</p>
+
+        <ul>
+            <li><code>table-dark</code>: Aplica um tema escuro.</li>
+            <li><code>table-striped</code>: Adiciona linhas com cores alternadas.</li>
+            <li><code>table-hover</code>: Destaca a linha ao passar o mouse.</li>
+            <li><code>table-bordered</code>: Adiciona bordas a todas as células.</li>
+            <li><code>table-borderless</code>: Remove todas as bordas.</li>
+            <li><code>table-sm</code>: Reduz o espaçamento entre as células.</li>
+        </ul>
+
+        <table class="table table-hover table-dark table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ford</td>
+                    <td>Mustang</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Toyota</td>
+                    <td>Corolla</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Chevrolet</td>
+                    <td>Camaro</td>
+                    <td>2023</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. Tabela Responsiva</h2>
+        <p>Para tabelas que precisam se adaptar a telas menores, use <code>.table-responsive</code>.</p>
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Ano</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Cor</th>
+                        <th scope="col">Potência</th>
+                        <th scope="col">Combustível</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ford</td>
+                        <td>Mustang</td>
+                        <td>2022</td>
+                        <td>R$ 350.000</td>
+                        <td>Vermelho</td>
+                        <td>450cv</td>
+                        <td>Gasolina</td>
+                    </tr>
+                    <tr>
+                        <td>Toyota</td>
+                        <td>Corolla</td>
+                        <td>2020</td>
+                        <td>R$ 140.000</td>
+                        <td>Branco</td>
+                        <td>177cv</td>
+                        <td>Flex</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet</td>
+                        <td>Camaro</td>
+                        <td>2023</td>
+                        <td>R$ 420.000</td>
+                        <td>Amarelo</td>
+                        <td>461cv</td>
+                        <td>Gasolina</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Conclusão</h2>
+        <p>O Bootstrap facilita a criação de tabelas bonitas e funcionais com poucos ajustes, permitindo customização e
+            responsividade.</p>
+
+    </div>
+
+</body>
+
+</html>

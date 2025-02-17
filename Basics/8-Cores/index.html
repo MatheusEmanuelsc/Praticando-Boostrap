@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <h1>Cores no Bootstrap</h1>
+    <p>O Bootstrap oferece classes para estilização de cores tanto em textos quanto em fundos de elementos.</p>
+
+    <h2>1. Cores de Texto</h2>
+    <p>Para alterar a cor do texto, utilize as classes <code>text-*</code>. Exemplo:</p>
+
+    <div class="container-fluid border border-dark p-3 my-4">
+        <p class="h3 text-muted">Muted (cinza claro)</p>
+        <p class="h3 text-primary">Primary (azul)</p>
+        <p class="h3 text-success">Success (verde)</p>
+        <p class="h3 text-info">Info (azul claro)</p>
+        <p class="h3 text-warning">Warning (amarelo)</p>
+        <p class="h3 text-danger">Danger (vermelho)</p>
+        <p class="h3 text-secondary">Secondary (cinza escuro)</p>
+        <p class="h3 text-white bg-dark">White (branco)</p>
+        <p class="h3 text-dark">Dark (preto/cinza escuro)</p>
+        <p class="h3 text-light bg-dark">Light (cinza claro)</p>
+    </div>
+
+    <h2>2. Cores de Fundo</h2>
+    <p>Para definir cores de fundo, use as classes <code>bg-*</code>. Exemplo:</p>
+
+    <div class="container bg-primary p-3 mb-2 text-white">Fundo azul (Primary)</div>
+    <div class="container bg-success p-3 mb-2 text-white">Fundo verde (Success)</div>
+    <div class="container bg-warning p-3 mb-2 text-dark">Fundo amarelo (Warning)</div>
+    <div class="container bg-danger p-3 mb-2 text-white">Fundo vermelho (Danger)</div>
+    <div class="container bg-info p-3 mb-2 text-dark">Fundo azul claro (Info)</div>
+    <div class="container bg-secondary p-3 mb-2 text-white">Fundo cinza escuro (Secondary)</div>
+    <div class="container bg-dark p-3 mb-2 text-white">Fundo preto (Dark)</div>
+    <div class="container bg-light p-3 mb-2 text-dark">Fundo cinza claro (Light)</div>
+
+    <h2>3. Opacidade</h2>
+    <p>Podemos adicionar opacidade usando <code>-50</code> nas cores de fundo. Exemplo:</p>
+
+    <div class="container bg-primary bg-opacity-50 p-3 mb-2 text-dark">Primary com 50% de opacidade</div>
+    <div class="container bg-danger bg-opacity-50 p-3 mb-2 text-dark">Danger com 50% de opacidade</div>
+
+    <h2>Conclusão</h2>
+    <p>O Bootstrap facilita a personalização de cores para texto e fundo, permitindo ajustes rápidos no design da
+        aplicação.</p>
+
+</body>
+
+</html>

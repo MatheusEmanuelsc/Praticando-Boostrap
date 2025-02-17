@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe Ratio no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <h1>Classe `ratio` no Bootstrap</h1>
+    <p>O Bootstrap oferece a classe `ratio` para criar elementos com proporções fixas e responsivas, como vídeos,
+        imagens e outros elementos.</p>
+
+    <h2>1. Utilizando a Classe `ratio` para Vídeos</h2>
+    <p>Para tornar vídeos responsivos, você pode usar a classe `ratio` junto com a classe de proporção desejada, como
+        `ratio-16x9` ou `ratio-4x3`.</p>
+
+    <div class="container-fluid border border-dark p-3 my-4">
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/VUC66Z6WMSY?si=ZjwQKb2WaH8astrI" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <h2>2. Utilizando a Classe `ratio` para Imagens</h2>
+    <p>A classe `ratio` também pode ser usada para manter proporções fixas de imagens.</p>
+
+    <div class="container-fluid border border-dark p-3 my-4">
+        <div class="ratio ratio-4x3">
+            <img src="imagem.jpg" alt="Imagem Responsiva" class="img-fluid">
+        </div>
+    </div>
+
+    <h2>3. Outras Proporções Disponíveis</h2>
+    <p>Você pode usar diferentes proporções com a classe `ratio`. Aqui estão alguns exemplos:</p>
+
+    <div class="container-fluid border border-dark p-3 my-4">
+        <div class="ratio ratio-16x9">
+            <p>Proporção 16:9</p>
+        </div>
+    </div>
+    <div class="container-fluid border border-dark p-3 my-4">
+        <div class="ratio ratio-4x3">
+            <p>Proporção 4:3</p>
+        </div>
+    </div>
+    <div class="container-fluid border border-dark p-3 my-4">
+        <div class="ratio ratio-1x1">
+            <p>Proporção 1:1 (quadrado)</p>
+        </div>
+    </div>
+
+    <h2>4. Ajustando Proporções de Conteúdos Diferentes</h2>
+    <p>A classe `ratio` pode ser aplicada a diversos tipos de conteúdo. Veja como funciona com vídeos e imagens em
+        proporções fixas.</p>
+
+    <div class="container-fluid border border-dark p-3 my-4">
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/YbJOTdZBX1g" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container-fluid border border-dark p-3 my-4">
+        <div class="ratio ratio-1x1">
+            <img src="imagem.jpg" alt="Imagem Responsiva" class="img-fluid">
+        </div>
+    </div>
+
+    <h2>Conclusão</h2>
+    <p>A classe `ratio` do Bootstrap é uma maneira simples e eficaz de garantir que seus vídeos e outros conteúdos
+        embutidos se ajustem ao tamanho da tela de maneira responsiva, mantendo as proporções fixas e evitando
+        distorções.</p>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
