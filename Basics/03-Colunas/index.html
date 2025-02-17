@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Colunas no Bootstrap</h1>
+    <p>O sistema de colunas do Bootstrap permite organizar e distribuir os elementos de forma flexível e responsiva.</p>
+
+    <h2>1. Colunas Iguais</h2>
+    <p>Quando usamos apenas <code>col</code>, as colunas têm o mesmo tamanho e se ajustam automaticamente.</p>
+    <div class="container border">
+        <div class="row">
+            <div class="col bg-primary text-white m-2 p-3">Coluna 1</div>
+            <div class="col bg-primary text-white m-2 p-3">Coluna 2</div>
+            <div class="col bg-primary text-white m-2 p-3">Coluna 3</div>
+        </div>
+    </div>
+
+    <h2>2. Colunas com Largura Definida</h2>
+    <p>Podemos definir a largura das colunas usando <code>col-{n}</code>, onde <code>n</code> vai de 1 a 12.</p>
+    <div class="container border">
+        <div class="row">
+            <div class="col-4 bg-success text-white m-2 p-3">Coluna 4</div>
+            <div class="col-8 bg-success text-white m-2 p-3">Coluna 8</div>
+        </div>
+    </div>
+
+    <h2>3. Colunas Responsivas</h2>
+    <p>Podemos definir diferentes larguras para cada breakpoint com <code>col-{breakpoint}-{n}</code>.</p>
+    <div class="container border">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 bg-danger text-white m-2 p-3">Coluna Responsiva</div>
+            <div class="col-md-6 col-lg-8 bg-danger text-white m-2 p-3">Coluna Responsiva</div>
+        </div>
+    </div>
+
+    <h2>Personalização</h2>
+    <ul>
+        <li><strong>Espaçamento:</strong> Use <code>m-</code> para margem e <code>p-</code> para padding.</li>
+        <li><strong>Cores:</strong> Utilize <code>bg-cor</code> (exemplo: <code>bg-primary</code>) para cores de fundo.
+        </li>
+        <li><strong>Quebras:</strong> O <code>w-100</code> força uma quebra de linha.</li>
+    </ul>
+
+    <h2>Conclusão</h2>
+    <p>O sistema de colunas do Bootstrap facilita a criação de layouts responsivos e flexíveis, adaptando-se a
+        diferentes tamanhos de tela.</p>
+</body>
+
+</html>

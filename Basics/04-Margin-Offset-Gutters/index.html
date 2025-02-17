@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margens, Offsets e Gutters no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Margens, Offsets e Gutters no Bootstrap</h1>
+    <p>Esses recursos permitem ajustar o espaçamento entre elementos e o alinhamento dentro do sistema de grid.</p>
+
+    <h2>1. Margens</h2>
+    <p>As margens podem ser aplicadas utilizando as classes <code>m-*</code> (margem externa) e <code>p-*</code> (margem
+        interna - padding).</p>
+    <div class="container border">
+        <div class="bg-primary text-white m-3 p-3">Elemento com margem e padding</div>
+    </div>
+
+    <h2>2. Offset</h2>
+    <p>O <code>offset</code> é utilizado para deslocar colunas dentro do grid.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-2 bg-secondary text-white p-3">Coluna deslocada</div>
+        </div>
+    </div>
+
+    <h2>3. Gutters</h2>
+    <p>Os <code>gutters</code> definem o espaçamento entre colunas dentro de um <code>row</code>.</p>
+    <div class="container">
+        <div class="row gx-3 gy-3">
+            <div class="col bg-success text-white p-3">Coluna 1</div>
+            <div class="col bg-success text-white p-3">Coluna 2</div>
+        </div>
+    </div>
+
+    <h2>Conclusão</h2>
+    <p>O uso correto de margens, offsets e gutters ajuda na organização do layout, garantindo um design mais equilibrado
+        e responsivo.</p>
+</body>
+
+</html>

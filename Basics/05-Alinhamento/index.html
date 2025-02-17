@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Alinhamento no Bootstrap</h1>
+    <p>O Bootstrap fornece diversas classes para alinhamento de elementos dentro do layout, utilizando flexbox e
+        alinhamento de texto.</p>
+
+    <h2>1. Alinhamento Vertical</h2>
+    <p>Para centralizar elementos verticalmente dentro de um contêiner flexível, utilize <code>align-items-*</code>.</p>
+    <div class="container d-flex align-items-center border" style="height: 150px;">
+        <div class="bg-warning p-3">Elemento centralizado verticalmente</div>
+    </div>
+
+    <h2>2. Alinhamento Horizontal</h2>
+    <p>Para alinhar elementos horizontalmente dentro de um contêiner flexível, utilize <code>justify-content-*</code>.
+    </p>
+    <div class="container d-flex justify-content-center border mt-3">
+        <div class="bg-info p-3">Elemento centralizado horizontalmente</div>
+    </div>
+
+    <h2>3. Alinhamento de Texto</h2>
+    <p>O alinhamento do texto pode ser definido com <code>text-start</code>, <code>text-center</code> e
+        <code>text-end</code>.</p>
+    <p class="text-start">Texto alinhado à esquerda</p>
+    <p class="text-center">Texto centralizado</p>
+    <p class="text-end">Texto alinhado à direita</p>
+
+    <h2>4. Alinhamento em Grid</h2>
+    <p>No sistema de grid do Bootstrap, podemos alinhar colunas usando <code>align-self-*</code> ou
+        <code>align-items-*</code> na linha.</p>
+    <div class="container">
+        <div class="row align-items-center border" style="height: 150px;">
+            <div class="col bg-success text-white p-3">Alinhado ao centro</div>
+            <div class="col bg-secondary text-white p-3 align-self-start">Alinhado ao topo</div>
+            <div class="col bg-danger text-white p-3 align-self-end">Alinhado à base</div>
+        </div>
+    </div>
+
+    <h2>Conclusão</h2>
+    <p>O Bootstrap torna o alinhamento de elementos mais fácil e flexível, permitindo organizar layouts responsivos de
+        forma prática.</p>
+</body>
+
+</html>
