@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body class="container mt-4">
+
+    <h1 class="text-center">📌 Alertas no Bootstrap</h1>
+
+    <div class="container mt-4">
+        <!-- 🔹 Alertas básicos -->
+        <!-- 
+            .alert → Classe base para alertas.
+            .alert-{cor} → Define a cor do alerta.
+            Exemplo: alert-primary, alert-success, alert-danger.
+        -->
+        <div class="alert alert-primary">
+            <p>🔹 Este é um alerta de classe <strong>primary</strong>.</p>
+        </div>
+        <div class="alert alert-secondary">
+            <p>🔹 Este é um alerta de classe <strong>secondary</strong>.</p>
+        </div>
+        <div class="alert alert-success">
+            <p>✅ Este é um alerta de classe <strong>success</strong>.</p>
+        </div>
+        <div class="alert alert-danger">
+            <p>⚠️ Este é um alerta de classe <strong>danger</strong>.</p>
+        </div>
+        <div class="alert alert-warning">
+            <p>⚠️ Este é um alerta de classe <strong>warning</strong>.</p>
+        </div>
+        <div class="alert alert-info">
+            <p>ℹ️ Este é um alerta de classe <strong>info</strong>.</p>
+        </div>
+        <div class="alert alert-light">
+            <p>🔹 Este é um alerta de classe <strong>light</strong>.</p>
+        </div>
+        <div class="alert alert-dark">
+            <p>🔹 Este é um alerta de classe <strong>dark</strong>.</p>
+        </div>
+
+        <!-- 🔹 Alertas com botão de fechamento -->
+        <!-- 
+            .alert-dismissible → Permite fechar o alerta.
+            .btn-close → Adiciona o botão de fechar.
+            data-bs-dismiss="alert" → Especifica que o botão fecha o alerta.
+        -->
+        <div class="alert alert-primary alert-dismissible fade show">
+            <p>🔹 Este é um alerta com botão de fechar.</p>
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

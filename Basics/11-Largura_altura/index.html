@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altura e Largura no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center">📏 Altura e Largura no Bootstrap</h1>
+
+        <!-- 🔹 Seção de Largura -->
+        <h2 class="mt-4">🔹 Largura (`w-`)</h2>
+        <p>As classes `w-` definem a largura do elemento em relação ao pai.</p>
+
+        <!-- w-25 / w-50 / w-75 / w-100 → Define a largura do elemento em 25%, 50%, 75% ou 100% do contêiner pai. -->
+        <div class="w-25 bg-primary text-white p-2">25% da largura</div>
+        <div class="w-50 bg-success text-white p-2">50% da largura</div>
+        <div class="w-75 bg-warning text-dark p-2">75% da largura</div>
+        <div class="w-100 bg-danger text-white p-2">100% da largura</div>
+
+        <!-- w-auto → Ajusta a largura ao conteúdo do elemento. -->
+        <p class="mt-3">📝 Também existe a classe <code>w-auto</code>, que ajusta a largura conforme o conteúdo.</p>
+        <div class="w-auto bg-secondary text-white p-2">Largura automática</div>
+
+        <!-- 🔹 Seção de Altura -->
+        <h2 class="mt-4">🔹 Altura (`h-`)</h2>
+        <p>As classes `h-` definem a altura do elemento.</p>
+
+        <div class="d-flex">
+            <!-- h-25 / h-50 / h-75 / h-100 → Define a altura proporcional ao elemento pai. -->
+            <div class="h-25 bg-info text-white p-2 m-1">Altura 25%</div>
+            <div class="h-50 bg-dark text-white p-2 m-1">Altura 50%</div>
+            <div class="h-75 bg-secondary text-white p-2 m-1">Altura 75%</div>
+            <div class="h-100 bg-light text-dark p-2 m-1 border">Altura 100%</div>
+        </div>
+
+        <!-- 🔹 Centralização -->
+        <h2 class="mt-4">🔹 Centralização (`m-auto` e `mx-auto`)</h2>
+        <p>Para centralizar um elemento horizontalmente, use `mx-auto`.</p>
+
+        <!-- mx-auto → Centraliza horizontalmente o elemento. -->
+        <div class="w-50 bg-primary text-white text-center p-2 mx-auto">Elemento centralizado</div>
+
+        <p class="mt-3">Para centralizar um elemento completamente, use
+            <code>d-flex align-items-center justify-content-center</code>.</p>
+
+        <!-- d-flex align-items-center justify-content-center → Centraliza um elemento completamente dentro de um contêiner flexível. -->
+        <div class="d-flex align-items-center justify-content-center bg-warning" style="height: 200px;">
+            <div class="bg-danger text-white p-3">Centralizado</div>
+        </div>
+
+    </div>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

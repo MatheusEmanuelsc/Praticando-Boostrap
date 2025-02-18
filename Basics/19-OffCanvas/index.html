@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offcanvas do Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <h1>Offcanvas do Bootstrap</h1>
+    <p>O componente <strong>Offcanvas</strong> do Bootstrap permite criar menus ou painéis deslizantes que aparecem da
+        lateral da tela, proporcionando uma experiência interativa. Ele pode ser utilizado para navegação, exibição de
+        informações adicionais ou outros tipos de conteúdo que não precisam estar visíveis o tempo todo.</p>
+
+    <h2>1. Estrutura Básica do Offcanvas</h2>
+    <p>A estrutura básica do Offcanvas é composta por um botão para abrir o painel e o próprio painel, que pode deslizar
+        de diferentes direções (esquerda, direita, top, bottom).</p>
+
+    <h2>2. Exemplo de Offcanvas</h2>
+    <p>A seguir, temos um exemplo básico de Offcanvas com um botão para abri-lo:</p>
+
+    <!-- Botão para abrir o offcanvas -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Abrir Offcanvas
+    </button>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Título do Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Este é um exemplo de conteúdo do Offcanvas. Você pode adicionar qualquer tipo de conteúdo aqui, como texto,
+            links de navegação, formulários ou outros elementos HTML.
+            <p>Adicione mais conteúdo conforme necessário. Você pode usar o Offcanvas para exibir menus, informações
+                contextuais ou qualquer outro tipo de conteúdo adicional sem ocupar muito espaço na tela.</p>
+        </div>
+    </div>
+
+    <h2>3. Explicação do Código</h2>
+    <p>Vamos analisar o código acima:</p>
+    <ul>
+        <li><strong>Botão para abrir o offcanvas:</strong> O botão possui os atributos
+            <code>data-bs-toggle="offcanvas"</code> e <code>data-bs-target="#offcanvasExample"</code>, que indicam qual
+            offcanvas será aberto quando o botão for clicado. O atributo <code>aria-controls="offcanvasExample"</code> é
+            utilizado para acessibilidade, associando o botão ao offcanvas específico.</li>
+        <li><strong>Offcanvas:</strong> O painel offcanvas é envolvido pela classe <code>offcanvas</code> e usa o ID
+            <code>id="offcanvasExample"</code> para ser referenciado pelo botão. A classe <code>offcanvas-start</code>
+            define que o offcanvas será exibido a partir da lateral esquerda da tela. Você pode usar
+            <code>offcanvas-end</code>, <code>offcanvas-top</code> ou <code>offcanvas-bottom</code> para alterar a
+            posição do painel.</li>
+        <li><strong>Offcanvas Header:</strong> Contém o título do painel (classificado como
+            <code>offcanvas-title</code>) e um botão de fechamento (<code>btn-close</code>) que fecha o painel ao ser
+            clicado.</li>
+        <li><strong>Offcanvas Body:</strong> A parte onde você pode inserir o conteúdo. Pode ser qualquer tipo de
+            conteúdo, como links, texto, imagens ou até mesmo formulários, dependendo do uso do offcanvas.</li>
+    </ul>
+
+    <h2>4. Customizando o Offcanvas</h2>
+    <p>O offcanvas pode ser customizado de várias maneiras:</p>
+    <ul>
+        <li><strong>Direção do Offcanvas:</strong> O offcanvas pode ser posicionado em qualquer uma das 4 direções
+            principais: esquerda (default), direita, topo ou fundo. Use as classes <code>offcanvas-start</code>,
+            <code>offcanvas-end</code>, <code>offcanvas-top</code> ou <code>offcanvas-bottom</code> para controlar isso.
+        </li>
+        <li><strong>Exibição em tamanho pequeno:</strong> Se o conteúdo for pequeno, você pode querer restringir o
+            tamanho do offcanvas. Para isso, adicione a classe <code>offcanvas-sm</code> para ajustar a largura em telas
+            menores.</li>
+        <li><strong>Backdrop:</strong> O backdrop é a área sombreada que aparece ao redor do offcanvas. Você pode
+            alterar sua visibilidade ou comportamento utilizando as opções de configuração no Bootstrap. Por padrão, o
+            offcanvas aparece com backdrop, mas você pode removê-lo utilizando <code>data-bs-backdrop="false"</code>.
+        </li>
+    </ul>
+
+    <h2>5. Exemplo com Backdrop e Customização</h2>
+    <p>Veja como você pode personalizar o offcanvas com backdrop e diferentes direções:</p>
+
+    <!-- Botão para abrir o offcanvas -->
+    <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExampleWithBackdrop" aria-controls="offcanvasExampleWithBackdrop">
+        Abrir Offcanvas com Backdrop
+    </button>
+
+    <!-- Offcanvas com backdrop -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExampleWithBackdrop"
+        aria-labelledby="offcanvasExampleWithBackdropLabel" data-bs-backdrop="true">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleWithBackdropLabel">Offcanvas com Backdrop</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            O offcanvas com backdrop adiciona uma camada sombreada atrás do painel. Você pode usar essa configuração
+            para focar a atenção do usuário no conteúdo dentro do painel.
+        </div>
+    </div>
+
+    <h2>Conclusão</h2>
+    <p>O componente Offcanvas do Bootstrap oferece uma maneira eficaz de criar painéis deslizantes, que podem ser
+        exibidos a partir de qualquer uma das bordas da tela. Ele é ideal para menus, painéis de informações e outras
+        interações que não ocupam a tela inteira, mas que ainda assim precisam chamar a atenção do usuário. A
+        customização é simples, permitindo ajustes de direção, tamanho e comportamento do backdrop.</p>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

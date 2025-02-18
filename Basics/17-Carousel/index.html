@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel do Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <h1>Carousel do Bootstrap</h1>
+    <p>O componente <strong>Carousel</strong> do Bootstrap permite criar apresentações de slides interativas e
+        responsivas, sendo ideal para mostrar imagens, textos, ou qualquer outro conteúdo dentro de uma interface de
+        usuário.</p>
+
+    <h2>1. Estrutura Básica do Carousel</h2>
+    <p>O carousel é composto por três principais componentes:</p>
+    <ul>
+        <li><strong>Carousel-indicators:</strong> Botões de navegação que permitem ao usuário selecionar um slide
+            específico.</li>
+        <li><strong>Carousel-inner:</strong> Contém os itens do slide, como imagens ou conteúdo em cada página do
+            carousel.</li>
+        <li><strong>Carousel-control:</strong> Botões de navegação que permitem ao usuário avançar ou retroceder entre
+            os slides.</li>
+    </ul>
+
+    <h2>2. Exemplo de Carousel</h2>
+    <p>A seguir, temos um exemplo básico de um carousel, com imagens e legendas para cada slide:</p>
+
+    <div id="banner" class="carousel slide" data-bs-ride="carousel">
+        <div id="indica" class="carousel-indicators">
+            <button data-bs-target="#banner" data-bs-slide-to="0" class="active" type="button"></button>
+            <button data-bs-target="#banner" data-bs-slide-to="1" type="button"></button>
+            <button data-bs-target="#banner" data-bs-slide-to="2" type="button"></button>
+            <button data-bs-target="#banner" data-bs-slide-to="3" type="button"></button>
+            <button data-bs-target="#banner" data-bs-slide-to="4" type="button"></button>
+        </div>
+        <div id="imagens" class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-50" src="https://img-c.udemycdn.com/course/750x422/4836030_598f_2.jpg"
+                    alt="Imagem 1">
+                <div class="carousel-caption">
+                    <h2>Seilar</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, placeat!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-50"
+                    src="https://www.hiperbytes.com.br/wp-content/uploads/2021/02/banner-curso-html.png" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-50" src="https://img-c.udemycdn.com/course/750x422/4836030_598f_2.jpg"
+                    alt="Imagem 3">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-50"
+                    src="https://cfbcursos.com.br/wp-content/uploads/2023/07/capa-curso_js_basico.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-50" src="https://img-c.udemycdn.com/course/750x422/4836030_598f_2.jpg"
+                    alt="Imagem 5">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <h2>3. Explicação do Código</h2>
+    <p>Vamos analisar o código acima em detalhes:</p>
+    <ul>
+        <li><strong>Data-bs-ride="carousel":</strong> Essa propriedade inicializa o carousel automaticamente assim que a
+            página for carregada.</li>
+        <li><strong>Carousel-indicators:</strong> São os círculos pequenos que ficam na parte inferior do carousel e
+            permitem ao usuário navegar diretamente para um slide específico.</li>
+        <li><strong>Carousel-item:</strong> Cada slide dentro do carousel. Cada item pode conter qualquer tipo de
+            conteúdo, como imagens, vídeos, textos, etc.</li>
+        <li><strong>Carousel-caption:</strong> Uma legenda opcional que pode ser adicionada a um slide, geralmente usada
+            para descrever ou dar contexto à imagem exibida.</li>
+        <li><strong>Carousel-control-prev & carousel-control-next:</strong> São os botões que permitem a navegação entre
+            os slides (anterior e próximo). Os ícones dentro desses botões indicam a direção (esquerda e direita).</li>
+    </ul>
+
+    <h2>4. Customizando o Carousel</h2>
+    <p>Você pode personalizar o carousel com diversos recursos do Bootstrap:</p>
+    <ul>
+        <li><strong>Intervalo:</strong> Para controlar o tempo entre as transições dos slides, você pode usar a
+            propriedade <code>data-bs-interval="2000"</code> para definir o intervalo em milissegundos.</li>
+        <li><strong>Modo de Loop:</strong> O carousel pode ser configurado para iniciar novamente quando chegar ao
+            final. Isso é feito adicionando a propriedade <code>data-bs-wrap="true"</code>.</li>
+        <li><strong>Modo de Pausa:</strong> O carousel pode ser pausado quando o mouse estiver sobre ele. Isso é feito
+            com a propriedade <code>data-bs-pause="hover"</code>.</li>
+    </ul>
+
+    <h2>Conclusão</h2>
+    <p>O carousel do Bootstrap é uma maneira prática e visualmente atraente de exibir slides interativos em sua página.
+        Ele oferece flexibilidade para exibir imagens, vídeos ou qualquer conteúdo, com várias opções de personalização
+        para atender às suas necessidades de design.</p>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

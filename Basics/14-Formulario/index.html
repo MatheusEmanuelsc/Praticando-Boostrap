@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body class="container mt-4">
+
+    <h1 class="text-center">📌 Formulários no Bootstrap</h1>
+
+    <form action="" class="mt-4 p-4 border rounded bg-light">
+        <!-- 🔹 Label e Input -->
+        <!-- 
+            .form-label → Estiliza o label para melhor legibilidade.
+            .form-control → Aplica estilos ao input, melhorando a aparência e responsividade.
+        -->
+        <label class="form-label" for="nome">Nome:</label>
+        <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+        <label class="form-label mt-3" for="email">Email:</label>
+        <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu email">
+
+        <label class="form-label mt-3" for="password">Senha:</label>
+        <input class="form-control" type="password" name="password" id="password" placeholder="Digite sua senha">
+
+        <!-- 🔹 Botão -->
+        <!-- 
+            .btn → Classe base para botões estilizados.
+            .btn-primary → Cor azul (cor padrão do Bootstrap).
+            .btn-success → Cor verde (sucesso).
+            .btn-danger → Cor vermelha (erro).
+        -->
+        <input type="button" class="btn btn-primary mt-3 w-100" value="Enviar">
+    </form>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

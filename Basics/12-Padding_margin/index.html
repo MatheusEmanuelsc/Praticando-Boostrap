@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding e Margin no Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center">📏 Padding e Margin no Bootstrap</h1>
+
+        <h2 class="mt-4">🔹 Margin (`m-`)</h2>
+        <p>As classes `m-` são usadas para adicionar margens externas ao elemento.</p>
+
+        <!-- 🔹 Explicação das Classes de Margin -->
+        <!-- 
+            m-0 → Remove a margem do elemento.
+            m-1 até m-5 → Define margens de 4px a 48px (escala do Bootstrap).
+            mx-auto → Centraliza o elemento horizontalmente.
+            my-3 → Adiciona margem vertical (topo e baixo) com valor 3.
+        -->
+
+        <div class="m-4 bg-primary text-white p-2">Margin 4 (16px)</div>
+        <div class="m-0 bg-success text-white p-2">Margin 0 (sem margem)</div>
+        <div class="mx-auto bg-warning text-dark p-2 w-50">Centralizado horizontalmente</div>
+
+        <h2 class="mt-4">🔹 Padding (`p-`)</h2>
+        <p>As classes `p-` são usadas para definir preenchimento interno do elemento.</p>
+
+        <!-- 🔹 Explicação das Classes de Padding -->
+        <!-- 
+            p-0 → Remove o padding interno.
+            p-1 até p-5 → Define o preenchimento interno do elemento de 4px a 48px.
+            px-3 → Adiciona padding apenas nas laterais (esquerda e direita).
+            py-5 → Adiciona padding apenas no topo e na base.
+        -->
+
+        <div class="p-5 bg-danger text-white">Padding 5 (grande espaçamento interno)</div>
+        <div class="p-0 bg-secondary text-white">Padding 0 (sem espaçamento interno)</div>
+        <div class="px-3 py-5 bg-dark text-white">Padding horizontal 3 e vertical 5</div>
+
+        <h2 class="mt-4">🔹 Combinação de Padding e Margin</h2>
+        <p>É possível combinar `m-` e `p-` para um espaçamento mais preciso.</p>
+
+        <div class="m-3 p-4 bg-info text-white">Margin 3 + Padding 4</div>
+    </div>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal do Bootstrap</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <h1>Modal do Bootstrap</h1>
+    <p>O componente <strong>Modal</strong> do Bootstrap é utilizado para exibir conteúdo de forma sobreposta à página
+        atual. Ele pode ser usado para exibir alertas, formulários, imagens ou outros tipos de conteúdo sem que o
+        usuário precise sair da página atual.</p>
+
+    <h2>1. Estrutura Básica do Modal</h2>
+    <p>Um modal básico no Bootstrap é composto por três partes principais:</p>
+    <ul>
+        <li><strong>Modal Header:</strong> Contém o título do modal e opcionalmente um botão de fechamento.</li>
+        <li><strong>Modal Body:</strong> O conteúdo principal do modal, onde você coloca a informação ou o formulário.
+        </li>
+        <li><strong>Modal Footer:</strong> A parte inferior, geralmente contendo botões de ação como "Fechar" ou
+            "Salvar".</li>
+    </ul>
+
+    <h2>2. Exemplo de Modal</h2>
+    <p>A seguir, temos um exemplo básico de modal com um botão para abri-lo:</p>
+
+    <!-- Botão para abrir o modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Abrir Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    Este é um exemplo de conteúdo do modal. Você pode adicionar qualquer tipo de conteúdo aqui, como
+                    texto, imagens ou formulários.
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>3. Explicação do Código</h2>
+    <p>Vamos analisar o código acima:</p>
+    <ul>
+        <li><strong>Botão para abrir o modal:</strong> O botão tem os atributos <code>data-bs-toggle="modal"</code> e
+            <code>data-bs-target="#exampleModal"</code> que indicam qual modal será aberto quando o botão for clicado.
+        </li>
+        <li><strong>Modal:</strong> O modal é envolvido pela classe <code>modal</code> e utiliza o atributo
+            <code>id="exampleModal"</code> para ser referenciado pelo botão. Ele também usa a classe <code>fade</code>
+            para adicionar uma animação de desvanecimento quando o modal aparece ou desaparece.</li>
+        <li><strong>Modal Header:</strong> Contém o título do modal (<code>modal-title</code>) e um botão de fechamento
+            (<code>btn-close</code>) que fecha o modal ao ser clicado.</li>
+        <li><strong>Modal Body:</strong> A parte onde você pode inserir conteúdo, como texto, formulários ou outros
+            elementos HTML.</li>
+        <li><strong>Modal Footer:</strong> Contém os botões de ação, como "Fechar" ou "Salvar mudanças". O botão
+            "Fechar" usa <code>data-bs-dismiss="modal"</code> para fechar o modal ao ser clicado.</li>
+    </ul>
+
+    <h2>4. Customizando o Modal</h2>
+    <p>O modal pode ser customizado de várias maneiras:</p>
+    <ul>
+        <li><strong>Modal de Tamanho:</strong> Para ajustar o tamanho do modal, você pode usar as classes
+            <code>modal-sm</code> para modal pequeno, <code>modal-lg</code> para modal grande ou
+            <code>modal-dialog-centered</code> para centralizá-lo na tela.</li>
+        <li><strong>Modal com Scroll:</strong> Caso o conteúdo do modal seja longo, você pode adicionar a classe
+            <code>modal-dialog-scrollable</code> para que ele seja rolável.</li>
+        <li><strong>Modal com backdrop:</strong> O backdrop é a área escurecida ao redor do modal. Você pode ocultá-lo
+            usando a propriedade <code>data-bs-backdrop="static"</code> para evitar que o modal seja fechado ao clicar
+            fora dele.</li>
+    </ul>
+
+    <h2>Conclusão</h2>
+    <p>O componente modal do Bootstrap é altamente flexível e fácil de implementar. Ele pode ser usado em uma variedade
+        de cenários, como para alertas, formulários de entrada, e informações importantes, sem interromper a navegação
+        do usuário. Sua personalização é simples, permitindo a adição de tamanhos, backdrop, e conteúdos variados para
+        se adaptar às necessidades do seu projeto.</p>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
