@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body class="container mt-5">
+    <h1>Sub Grupos de Botões</h1>
+
+    <div class="btn-group">
+        <!-- Botões principais -->
+        <button type="button" class="btn btn-primary">HTML</button>
+        <button type="button" class="btn btn-primary">CSS</button>
+
+        <!-- Subgrupo: JS com Dropdown -->
+        <div class="btn-group">
+            <!-- Botão principal do subgrupo -->
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">JS</button>
+
+            <!-- Menu de opções do dropdown -->
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Variáveis</a>
+                <a href="#" class="dropdown-item">Console</a>
+                <a href="#" class="dropdown-item">Condicionais</a>
+            </div>
+        </div>
+    </div>
+
+    <p>O botão <code>JS</code> abre um subgrupo de opções (dropdown) com mais detalhes sobre JavaScript.</p>
+
+    <!-- Incluindo o script necessário para o dropdown funcionar -->
+    <script src="/Basics/Formas_de_Instalacao/Npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
